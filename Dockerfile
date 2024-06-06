@@ -4,6 +4,7 @@ WORKDIR /app
 
 RUN apk add --no-cache \
         libc6-compat \
+        curl \
         ca-certificates && \
     rm -rf /var/cache/apk/* && \
     corepack enable && \
